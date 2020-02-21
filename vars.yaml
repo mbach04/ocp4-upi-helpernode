@@ -1,0 +1,43 @@
+---
+disk: sda
+helper:
+  name: "helper"
+  ipaddr: "192.168.3.25"
+  networkifacename: "eth0"
+dns:
+  domain: "matthewbach.dev"
+  clusterid: "ocp4"
+  forwarder1: "8.8.8.8"
+  forwarder2: "8.8.4.4"
+dhcp:
+  router: "192.168.3.1"
+  bcast: "192.168.3.255"
+  netmask: "255.255.255.0"
+  poolstart: "192.168.3.100"
+  poolend: "192.168.3.130"
+  ipid: "192.168.3.0"
+  netmaskid: "255.255.255.0"
+bootstrap:
+  name: "bootstrap"
+  ipaddr: "192.168.3.99"
+  macaddr: "<TODO>"
+masters:
+  - name: "master0"
+    ipaddr: "192.168.3.100"
+    macaddr: "<TODO>"
+  - name: "master1"
+    ipaddr: "192.168.3.101"
+    macaddr: "<TODO>"
+  - name: "master2"
+    ipaddr: "192.168.3.102"
+    macaddr: "<TODO>"
+workers:
+  - name: "worker0"
+    ipaddr: "192.168.3.110"
+    macaddr: "1C:69:7A:0F:E1:D4"
+  - name: "worker1"
+    ipaddr: "192.168.7.111"
+    macaddr: "1C:69:7A:60:45:FA"
+  - name: "worker2"
+    ipaddr: "192.168.7.112"
+    macaddr: "1C:69:7A:0E:5F:59"
